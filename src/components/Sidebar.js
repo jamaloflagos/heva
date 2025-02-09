@@ -7,6 +7,7 @@ export default function Sidebar({ isOpen, toggleSidebar }) {
         className={`fixed inset-0 bg-gray-900 bg-opacity-75 z-50 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out md:hidden`}
+        onClick={toggleSidebar}
       >
         <div className="bg-white w-64 h-full shadow-lg p-6">
           <div className="flex justify-between items-center">
